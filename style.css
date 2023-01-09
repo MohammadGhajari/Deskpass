@@ -1,0 +1,651 @@
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Basis Grotesque,Helvetica,sans-serif;
+}
+a {
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+header .logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo svg {
+    width: 200px;
+}
+header .middle-header {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .middle-header div {
+    width: 17%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .middle-header div a{
+    font-weight: 500;
+    color: black;
+    font-size: 1.3vw;
+    transition: 0.2s;
+}
+header .middle-header div a:hover {
+    text-decoration: underline black;
+    transition: 0.2s;
+}
+header .login-signUp-btn {
+    width: 20%;
+    height: 100%;
+}
+header .login-signUp-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .login-signUp-btn .get-start {
+    width: 40%;
+    height: 50%;
+    border-radius: 30px;
+    background-color: #4760FF;
+    color: white;
+    font-size: 1vw;
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+header .login-signUp-btn .get-start:hover {
+    background-color: #140C40;
+    transform: translateY(-2px);
+    transition: 0.2s;
+}
+header .login-signUp-btn pre {
+    margin: 1vw;
+}
+header .login-signUp-btn .Login {
+    background: none;
+    border: none;
+    color: royalblue;
+    font-size: 0.8vw;
+    cursor: pointer;
+    font-weight: 600;
+}
+header .login-signUp-btn .Login:hover {
+    color: #140C40;
+}
+/*----------------------------------------------------------------------------*/
+.section1 {
+    width: 100%;
+    height: 100%;
+    background: url("background (5).jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.section1 .content {
+    color: white;
+    width: 60%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rem;
+}
+.section1 .content h1 {
+    font-size: 4vw;
+    margin-bottom: 2rem;
+}
+.section1 .content h1 u {
+    text-decoration: #4760FF underline;
+}
+.section1 .content p {
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2vw;
+    font-family: Simula,Times,serif;
+}
+.section1 .content .see-space-content {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 22%;
+    border-radius: 30px;
+    background-color: white;
+}
+.section1 .content .see-space-content pre {
+    font-size: 1.2vw;
+    font-family: Basis Grotesque,Helvetica,sans-serif;
+    color: black;
+}
+.section1 .content .see-space-content a {
+    font-size: 1.1vw;
+    color: #4760FF;
+    font-weight: 600;
+}
+.section1 .content .see-space-content a[href="##"] {
+    height: 75%;
+    width: 26%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4760FF;
+    color: white;
+    margin-left: 1rem;
+    transition: 0.2s;
+    font-weight: 500;
+}
+.section1 .content .see-space-content a[href="##"]:hover {
+    background-color: #140C40;
+    transform: translateY(-2px);
+    transition: 0.2s;
+}
+/*---------------------------------------------------------------------------*/
+.section2 {
+    width: 100%;
+    height: 100%;
+    background-color: #E7EDFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section2 .mission {
+    font-weight: 600;
+    color: #4760FF;
+    margin-bottom: 1rem;
+}
+.section2 .photos {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.section2 .photos img {
+    height: 100%;
+    width: 30%;
+    padding: 1rem;
+}
+.section2 .title {
+    margin-top: 2rem;
+    font-size: 3vw;
+    text-align: center;
+}
+.section2 .phrase {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2vw;
+    line-height: 1.5rem;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.section3 {
+    width: 100%;
+    height: 250%;
+    background-color: #FFFEFE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section3 div {
+    width: 100%;
+    height: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3 div img {
+    width: 35%;
+    height: 95%;
+    margin-top: 10rem;
+}
+.section3 .main-div-1 .right-content, .section3 .main-div-2 .left-content, .section3 .main-div-3 .right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 17rem;
+    margin-left: 10rem;
+    width: 40%;
+    height: 100%;
+    line-height: 3rem;
+}
+.section3 .main-div-1 .right-content .p1, .section3 .main-div-2 .left-content .p1, .section3 .main-div-3 .right-content .p1{
+    font-size: 1.05vw;
+    color: #4760ff;
+    font-weight: 700;
+}
+.section3 .main-div-1 .right-content .p2, .section3 .main-div-2 .left-content .p2, .section3 .main-div-3 .right-content .p2 {
+    font-size: 3vw;
+}
+.section3 .main-div-1 .right-content .p3, .section3 .main-div-2 .left-content .p3, .section3 .main-div-3 .right-content .p3 {
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+.section3 .main-div-1 .right-content .p4 a, .section3 .main-div-2 .left-content .p4 a, .section3 .main-div-3 .right-content .p4 a{
+    text-decoration: underline;
+    color: #4760ff;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.section3 .main-div-1 .right-content .p4 a:hover, .section3 .main-div-2 .left-content .p4 a:hover, .section3 .main-div-3 .right-content .p4 a:hover {
+    text-decoration: none;
+    transition: 0.2s;
+}
+/*-----------------------------------------------------------------------------*/
+.section4 {
+    width: 100%;
+    height: 100%;
+    background-image: url("coded-background.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section4 div {
+    width: 50%;
+    height: 100%;
+}
+.section4 .right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.section4 .right-content p {
+    color: white;
+    font-size: 4vw;
+}
+.section4 .right-content p u {
+    text-decoration: underline blue;
+}
+.section4 .right-content a {
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.5vw;
+    transition: 0.2s;
+}
+.section4 .right-content a:hover {
+    transform: translateY(-2px);
+    transition: 0.2s;
+}
+.section4 .right-content a svg {
+    font-weight: 900;
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: #45adee;
+}
+/*---------------------------------------------------------------------------------*/
+.section5 {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.section5 p {
+    margin-top: 5rem;
+    font-size: 2vw;
+    font-family: Simula,Times,serif;
+    margin-bottom: 2rem;
+}
+.section5 .photos {
+    width: 65%;
+    height: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.section5 .photos img {
+    margin: 1rem;
+    width: 8%;
+    height: 20%;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.section6 {
+    width: 100%;
+    height: 150%;
+    background-color: #F3ED80;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.section6 .top {
+    margin-top: 5rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.section6 .top h1, .section6 .top p {
+    font-size: 2vw;
+    font-family: Simula,Times,serif;
+    width: 50%;
+}
+.section6 .top h1 {
+    font-family: Basis Grotesque,Helvetica,sans-serif;
+    font-size: 5vw;
+}
+.section6 .top p {
+    line-height: 2.5rem;
+    text-align: justify-all;
+}
+.section6 .bottom {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.section6 .bottom div {
+    width: 15%;
+    margin: 3rem;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section6 .bottom div h1 {
+    font-size: 6vw;
+    color: #4760FF;
+    font-weight: bold;
+}
+.section6 .bottom div p {
+    font-size: 1vw;
+    line-height: 1.5;
+}
+.section6 .bottom div a {
+    color: #4760FF;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+/*======================================================================================*/
+.section7 {
+    background-color: #E8ECF9;
+    width: 100%;
+    height: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section7 .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.section7 .right img {
+    width: 100%;
+    height: 90%;
+}
+.section7 .left {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.section7 .left p {
+    margin-left: 4rem;
+}
+.section7 .left .costomer {
+    color: #4760ff;
+    margin-bottom: 8rem;
+}
+.section7 .left .phrase {
+    width: 50%;
+    font-family: Simula,Times,serif;
+    font-size: 2vw;
+    line-height: 2.5rem;
+}
+.section7 .left .andrew {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+/*==========================================================================================*/
+.section8 {
+    width: 100%;
+    height: 120%;
+    background-color: #FFFEFE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section8 p:nth-child(1) {
+    font-size: 2.5vw;
+    font-family: Simula,Times,serif;
+    margin-bottom: 2rem;
+}
+.section8 .middle {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section8 .middle div {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section8 .middle .Teams {
+    border-right: 1px solid gray;
+}
+.section8 .middle div img {
+    width: 20%;
+    height: 20%;
+}
+.section8 .middle div h2 {
+    font-size: 1.5vw;
+}
+.section8 .middle div p {
+    margin-top: 1rem;
+    text-align: center;
+    width: 80%;
+    line-height: 1.5rem;
+
+}
+.section8 .middle div a {
+    margin-top: 1rem;
+    width: 40%;
+    height: 13%;
+    border-radius: 15px;
+}
+.section8 .middle div a div{
+    width: 100%;
+    height: 100%;
+    background-color: #4760FF;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+.section8 .middle div a div:hover {
+    transform: translateY(-2px);
+    transition: 0.2s;
+    background-color: #140C40;
+}
+.section8 .contact {
+    margin-top: 3rem;
+}
+.section8 .contact a {
+    text-decoration: underline;
+    color: #4760FF;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.section8 .contact a:hover {
+    text-decoration: none;
+    transition: 0.2s;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+footer {
+    background-color: #140C40;
+    width: 100%;
+    height: 130%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .main-footer{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .main-footer div {
+    width: 100%;
+}
+footer .main-footer .head {
+    height: 10%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .main-footer .head svg:first-child {
+    width: 10%;
+    height: 100%;
+}
+footer .main-footer .head p {
+    font-size: 2vw;
+    font-weight: 600;
+    color: #4760FF;
+}
+footer .main-footer .head .social {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer .main-footer .head .social svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.7rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+footer .main-footer .head .social svg path:hover {
+    fill: #4760FF;
+    transition: 0.2s;
+}
+footer .main-footer .middle {
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+footer .main-footer .middle p {
+    width: 100%;
+    color: #4760FF;
+    font-weight: 600;
+}
+footer .main-footer .middle div {
+    color: white;
+    width: 16%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+footer .main-footer .middle div:hover {
+    text-decoration: underline royalblue;
+    transition: 0.2s;
+}
+footer .main-footer .footer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 20%;
+}
+footer .main-footer .footer .left, footer .main-footer .footer .middle-footer, footer .main-footer .footer .right {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+footer .main-footer .footer .left p, footer .main-footer .footer .middle-footer p, footer .main-footer .footer .right p {
+    width: 100%;
+    color: #4760FF;
+    font-weight: 600;
+}
+footer .main-footer .footer .left div, footer .main-footer .footer .middle-footer div, footer .main-footer .footer .right div {
+    width: 50%;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+footer .main-footer .footer .left div:hover, footer .main-footer .footer .middle-footer div:hover, footer .main-footer .footer .right div:hover {
+    text-decoration: underline royalblue;
+    transition: 0.2s;
+}
+footer .main-footer .footer .right a {
+    transition: 0.2s;
+}
+footer .main-footer .footer .right a .p1 {
+    color: white;
+    font-size: 2vw;
+}
+footer .main-footer .footer .right a .p2 {
+    color: white;
+    font-weight: lighter;
+    margin-top: 1rem;
+}
+footer .main-footer .footer .right a:hover .p2 {
+    text-decoration: underline royalblue;
+    transition: 0.2s;
+}
+footer .main-footer .footer .right a:hover .p1 {
+    color: blue;
+}
+/*-----------------------------------------------------------------------------------------------*/
+.chat {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    background-color: royalblue;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}

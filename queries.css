@@ -1,0 +1,293 @@
+@media screen and (max-width: 700px){
+    header {
+        height: 8%;
+        justify-content: space-between;
+    }
+    header .middle-header {
+        display: none;
+    }
+    header .login-signUp-btn {
+        width: 50%;
+    }
+    header .login-signUp-btn .get-start {
+        width: 50%;
+        height: 60%;
+        font-size: 3vw;
+    }
+    header .login-signUp-btn .Login {
+        font-size: 3vw;
+    }
+    header .logo svg {
+        margin-left: 1rem;
+        width: 200px;
+        height: 200px;
+    }
+
+    .section1 {
+        align-items: flex-start;
+        background-size: cover;
+        height: 100%;
+    }
+    .section1 .content {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 80%;
+        height: 50%;
+    }
+    .section1 .content h1{
+        margin-top: 5rem;
+        font-size: 6vw;
+    }
+    .section1 .content p {
+        text-align: center;
+        font-size: 4.2vw;
+        line-height: 1.5rem;
+    }
+    .section1 .content .see-space-content {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 .content .see-space-content svg {
+        width: 10px;
+        height: 10px;
+    }
+    .section1 .content .see-space-content pre, .section1 .content .see-space-content a {
+        font-size: 0.8rem ;
+    }
+
+    .section2 {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .section2 p {
+        margin-top: 1rem;
+    }
+    .section2 div {
+        margin: 0;
+    }
+    .section2 .photos {
+        height: 60%;
+        width: 100%;
+    }
+    .section2 .photos img {
+        width: 60%;
+        justify-content: space-around;
+        height: 30%;
+    }
+    .section2 .title {
+        margin-top: 2rem;
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .section2 .phrase {
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+        font-size: 2.3vw;
+        font-weight: 600;
+    }
+
+    .section3 {
+        height: 200%;
+        justify-content: flex-start;
+    }
+    .section3 div {
+        height: 33%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section3 .main-div-2 {
+        flex-direction: column-reverse;
+    }
+    .section3 div img {
+        margin: 0;
+        height: 60%;
+        width: 60%;
+    }
+    .section3 .main-div-1 {
+        margin-top: 1rem;
+    }
+    .section3 .main-div-1 .right-content, .section3 .main-div-2 .left-content, .section3 .main-div-3 .right-content {
+        margin: 0;
+        line-height: 1rem;
+        width: 60%;
+    }
+    .section3 .main-div-1 .right-content .p1, .section3 .main-div-2 .left-content .p1, .section3 .main-div-3 .right-content .p1 {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+    .section3 .main-div-1 .right-content .p3, .section3 .main-div-2 .left-content .p3, .section3 .main-div-3 .right-content .p3 {
+        line-height: 1rem;
+        text-align: justify;
+        width: 100%;
+    }
+    .section3 .main-div-1 .right-content .p2, .section3 .main-div-2 .left-content .p2, .section3 .main-div-3 .right-content .p2 {
+        line-height: 1.3rem;
+        font-weight: 600;
+    }
+    .section3 .main-div-1 .right-content .p4, .section3 .main-div-2 .left-content .p4, .section3 .main-div-3 .right-content .p4 {
+        margin-top: 1rem;
+    }
+
+    .section4 {
+        height: 50%;
+    }
+    .section4 .right-content a {
+        font-size: 1.3rem;
+        margin-right: 1rem;
+    }
+
+    .section5 p {
+       font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+    .section5 .photos {
+        width: 100%;
+        height: 20%;
+    }
+    .section5 .photos img {
+        width: 16%;
+        height: 13%;
+        margin: 1rem;
+    }
+
+    .section6 {
+        height: 110%;
+    }
+    .section6 .top {
+        height: 30%;
+    }
+    .section6 .top p {
+        width: 60%;
+        line-height: 1.5rem!important;
+        font-size: 1rem;
+    }
+    .section6 .top h1 {
+        font-size: 2rem;
+        margin-right: 1rem;
+        width: 40%;
+    }
+    .section6 .bottom {
+        margin-top: 1rem;
+        height: 60%
+    }
+    .section6 .bottom div {
+        margin: 1rem;
+        width: 33%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .section6 .bottom div p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .section7 {
+        height: 60%;
+    }
+    .section7 div {
+        height: 100%;
+    }
+    .section7 .left .costomer {
+        margin-bottom: 3rem;
+        font-weight: 600;
+    }
+    .section7 .left .phrase {
+        text-align: center;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+    .section7 .right img {
+        height: 50%;
+    }
+
+    .section8 {
+        height: 80%;
+    }
+    .section8 .middle .Teams, .section8 .middle .Workspace {
+        width: 50%;
+    }
+    .section8 p:first-child {
+        font-size: 1.6rem;
+    }
+    .section8 .middle .Teams a, .section8 .middle .Workspace a {
+        width: 80%;
+    }
+    .contact {
+        margin-left: 2rem;
+    }
+
+    footer {
+        height: 130%;
+    }
+    footer .main-footer {
+        height: 100%;
+        justify-content: flex-start;
+    }
+    footer .main-footer .head .logo-svg:first-child{
+        width: 150px;
+        height: 80px;
+    }
+    footer .main-footer .head .social {
+        width: 30%;
+        justify-content: space-between;
+    }
+    footer .main-footer .head p {
+        font-size: 0.8rem;
+        width: 50%;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    footer .main-footer .middle {
+        height: 40%;
+    }
+    footer .main-footer .middle p {
+        font-size: 1.3rem;
+    }
+    footer .main-footer .middle div {
+        width: 25%;
+        height: 3%;
+        font-weight: 400;
+        font-size: 0.9rem;
+    }
+    footer .main-footer .footer {
+        height: 15%;
+    }
+    footer .main-footer .footer div {
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 45% !important;
+        font-size: 0.8rem;
+
+    }
+    footer .main-footer .footer div p {
+        font-size: 1.3rem;
+    }
+    footer .main-footer .footer .left {
+        margin-right: 1rem;
+    }
+    footer .main-footer .footer div div {
+        height: 10%;
+        width: 40%;
+    }
+    footer .main-footer .footer .right {
+        display: none;
+    }
+    footer .main-footer div {
+        height: 33%;
+        margin: 0;
+    }
+    footer .main-footer .head .social svg {
+        margin: 0;
+        height: 15px!important;
+        width: 15px!important;
+    }
+}

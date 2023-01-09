@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="cssReset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="queries.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>deskpass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body onload="change_background()">
+    <header>
+        <div class="logo">
+            <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1077.27 300.35"><path class="word logo-svg" d="M586.09,300.35h-29.6V119.17h29.6v8.42c9.7-7.14,22.21-11.23,36.76-11.23,33.67,0,60.73,28.07,60.73,63.29,0,35-27.06,63-60.73,63-14.55,0-27.06-4.09-36.76-11.24v68.9ZM995.36,199.3c2.55,14.29,13.27,20.41,29.6,20.41,14.29,0,24.25-5.1,24.25-13.27,0-6.38-5.11-11-14.55-12.76l-26.29-4.33C990,186,972.64,176.59,972.64,154.64c0-24.24,20.68-38.79,50.79-38.79,20.67,0,50.53,7.14,53.34,40.07l-27.31.25c-1-12.25-12.24-17.61-26-17.61-14.29,0-21.69,5.87-21.69,13,0,5.87,4.08,11.48,17.1,13.78l22.46,3.57c18.37,3.32,36,11.48,36,35,0,25.78-22.7,39.81-53.07,39.81-27.56,0-53.09-11.48-55.89-44.65l27.05.25Zm-684.07,0c2.56,14.29,13.28,20.41,29.61,20.41,14.29,0,24.24-5.1,24.24-13.27,0-6.38-5.1-11-14.55-12.76l-26.28-4.33c-18.38-3.32-35.73-12.76-35.73-34.71,0-24.24,20.67-38.79,50.79-38.79,20.67,0,50.52,7.14,53.33,40.07l-27.3.25c-1-12.25-12.25-17.61-26-17.61-14.3,0-21.69,5.87-21.69,13,0,5.87,4.08,11.48,17.09,13.78l22.46,3.57c18.38,3.32,36,11.48,36,35,0,25.78-22.71,39.81-53.08,39.81-27.56,0-53.08-11.48-55.89-44.65l27.05.25Zm561.59,0c2.56,14.29,13.27,20.41,29.6,20.41,14.29,0,24.25-5.1,24.25-13.27,0-6.38-5.11-11-14.55-12.76l-26.28-4.33c-18.37-3.32-35.73-12.76-35.73-34.71,0-24.24,20.67-38.79,50.78-38.79,20.67,0,50.53,7.14,53.34,40.07l-27.3.25c-1-12.25-12.25-17.61-26-17.61-14.29,0-21.68,5.87-21.68,13,0,5.87,4.08,11.48,17.09,13.78l22.46,3.57c18.37,3.32,36,11.48,36,35,0,25.78-22.71,39.81-53.08,39.81-27.55,0-53.08-11.48-55.89-44.65l27,.25Zm-695.8-12c2.56,17.1,14.29,30.37,36.25,30.37,11.73,0,20.16-3.82,24.49-11.23h31.39c-6.89,22.21-29.09,37.26-56.65,37.26-38.53,0-64.32-28.32-64.32-64,0-37,25.79-64.31,63.55-64.31,34.2,0,59.46,25,59.72,62.27a51.37,51.37,0,0,1-.77,9.69Zm-50,52.58H97.75v-8.69c-10,7.41-22.47,11.5-37,11.5C27.05,242.69,0,214.61,0,179.39c0-35,27.05-63,60.74-63,14.54,0,27,4.09,37,11.23V58.69h29.34V239.88Zm698.61,0H796.35v-8.43c-10,7.15-22.46,11.24-37,11.24-33.69,0-60.74-28.08-60.74-63,0-35.22,27-63.29,60.74-63.29,14.54,0,27,4.09,37,11.23v-8.42H825.7Zm-379.69,0H416.67V58.69H446V174l53.09-54.86h37.51l-48.49,50,55.38,70.7H505.22l-37.51-49.52L446,212.82v27.06ZM97.75,200.06V158.73c-8.43-12.25-20.17-16.85-32.67-16.85-20.67,0-35.73,17.61-35.73,37.51,0,20.17,15.06,37.77,35.73,37.77C77.58,217.16,89.32,212.57,97.75,200.06Zm698.6,0V159c-8.42-12.5-20.16-17.1-32.66-17.1C743,141.88,728,159.49,728,179.65c0,19.91,15.06,37.51,35.73,37.51C776.19,217.16,787.93,212.57,796.35,200.06ZM654.23,179.65c0-20.16-14.8-37.77-35.73-37.77-12.5,0-24,4.6-32.41,16.85v41.59c8.42,12.25,19.91,16.84,32.41,16.84,20.93,0,35.73-17.6,35.73-37.51ZM177.6,169.18h64.05c-2-17.86-12.76-28.83-29.86-28.83C192.14,140.35,180.91,152.6,177.6,169.18Z" style="fill:black;fill-rule:evenodd"></path><rect class="bar" x="97.74" width="348.27" height="29.34" style="fill:blue"></rect></svg>
+        </div>
+        <div class="middle-header">
+            <div class="find-spaces"><a href="#">Find Spaces <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/> </svg></a></div>
+            <div class="Solutions"><a href="#">Solutions <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/> </svg></a></div>
+            <div><a href="#">Pricing </a></div>
+            <div class="Resources"><a href="#">Resources <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/> </svg></a></div>
+        </div>
+        <div class="login-signUp-btn">
+            <button class="get-start">Get Started</button>
+            <pre>or</pre>
+            <button class="Login">Login</button>
+        </div>
+    </header>
+    <div class="section1">
+        <div class="content">
+            <h1 class="title">work from <u>anywhere</u>.</h1>
+            <p>We connect people to the amazing <u>workspaces</u> they need today...
+                <br>
+                to help companies create the hybrid <u>workspaces</u> of tomorrow.
+            </p>
+            <div class="see-space-content">
+                <pre>Find </pre>
+                <a href="#">Meeting Rooms <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/> </svg></a>
+                <pre>in </pre>
+                <a href="#">Aberdeen <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/> </svg></a>
+                <a href="##"><div class="see-space">See spaces</div></a>
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+        <p class="mission">OUR MISSION IS SIMPLE</p>
+        <div class="photos">
+            <img src="mission-1-b191ae5f30.png" alt="mission1">
+            <img src="mission-2-4b7e2df265.png" alt="mission2">
+            <img src="mission-3-aa5bc5f964.png" alt="mission3">
+        </div>
+        <p class="title">Ensure everyone can find space <br> instantly to get their best work done.</p>
+        <p class="phrase">If you need space today, you need a huge range of options that can be reserved simply and <br> efficiently. If you need to offer flexible work benefits to all your team members, you need our <br> simple solution for teams of any size.</p>
+    </div>
+    <div class="section3">
+        <div class="main-div-1">
+            <img src="how-1-a6711b457c.png" alt="how1">
+            <div class="right-content">
+                <p class="p1">DESKPASS INSTANT WORKSPACE</p>
+                <p class="p2">Instantly reserve desks,  conference rooms, or a  private office.</p>
+                <p class="p3">for as long as you need from thousands of <br> bookable workspaces in more than 150 cities <br> worldwide.</p>
+                <p class="p4"><a href="#">Learn more</a> or <a href="#">Find your space today</a> </p>
+            </div>
+        </div>
+        <div class="main-div-2">
+            <div class="left-content">
+                <p class="p1">DESKPASS TEAMS</p>
+                <p class="p2">Easily launch and  manage a complete  hybrid work strategy.</p>
+                <p class="p3">for individual teams or an entire company by <br> providing every employee managed access to <br> the most complete network of coworking <br> options.</p>
+                <p class="p4"><a href="#">Learn more</a></p>
+            </div>
+            <img src="how-2-49d9c28b3d.png" alt="how2">
+        </div>
+        <div class="main-div-3">
+            <img src="how-3-143d763d76.png" alt="how3">
+            <div class="right-content">
+                <p class="p1">DESKPASS HQ</p>
+                <p class="p2">Integrate existing offices  into your flexible work  benefits program.</p>
+                <p class="p3">by making desks, conference rooms, and <br> offices in those location instantly reservable by <br> anyone.</p>
+                <p class="p4"><a href="#">Learn more</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="section4">
+        <div class="empty-content"></div>
+        <div class="right-content">
+            <p>172 cities, <br>22 countries, <br> <u>and growing!</u></p>
+            <a href="#">Find a space near you <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4760FF" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/> </svg></a>
+        </div>
+    </div>
+    <div class="section5">
+        <p>Considering Deskpass? You’re in good company.</p>
+        <div class="photos">
+            <img src="photos/1%20(1).avif" alt="photo">
+            <img src="photos/1%20(2).avif" alt="photo">
+            <img src="photos/1%20(3).avif" alt="photo">
+            <img src="photos/1%20(4).avif" alt="photo">
+            <img src="photos/1%20(5).avif" alt="photo">
+            <img src="photos/1%20(6).avif" alt="photo">
+            <img src="photos/1%20(7).avif" alt="photo">
+            <img src="photos/1%20(8).avif" alt="photo">
+            <img src="photos/1%20(9).avif" alt="photo">
+            <img src="photos/1%20(10).avif" alt="photo">
+            <img src="photos/1%20(11).avif" alt="photo">
+            <img src="photos/1%20(12).avif" alt="photo">
+            <img src="photos/1%20(13).avif" alt="photo">
+            <img src="photos/1%20(14).avif" alt="photo">
+            <img src="photos/1%20(15).avif" alt="photo">
+            <img src="photos/1%20(16).avif" alt="photo">
+        </div>
+    </div>
+    <div class="section6">
+        <div class="top">
+            <h1>Truth in numbers.</h1>
+            <p class="pp">When people work in convenient, comfortable, and safe spaces they are more likely to experience higher job satisfaction and productivity. With the tools and resources available for remote working, any individual or team has the ability to work from a well-appointed coworking space. Enabling them to do their best work, while building companies that emphasize the health and wellness benefits that people value today.</p>
+        </div>
+        <div class="bottom">
+            <div class="statistic1 statistic">
+                <h1>87%</h1>
+                <p>of people given remote benefits will use them.</p>
+                <a href="#">McKinsey</a>
+            </div>
+            <div class="statistic2 statistic">
+                <h1>63%</h1>
+                <p>of high-growth companies have already adopted a “productivity anywhere” workforce model.</p>
+                <a href="#">Accenture</a>
+            </div>
+            <div class="statistic3 statistic">
+                <h1>50%</h1>
+                <p>of respondents would consider switching jobs if they don’t have a hybrid work arrangement.</p>
+                <a href="#">Deskpass Survey</a>
+            </div>
+            <div class="statistic4 statistic">
+                <h1>92M</h1>
+                <p>individuals in the US have the option to work remote full or part time.</p>
+                <a href="#">McKinsey</a>
+            </div>
+        </div>
+    </div>
+    <div class="section7">
+        <div class="left">
+            <p class="costomer">CUSTOMER STORIES</p>
+            <p class="phrase">Deskpass has transformed the way we think about our footprint and is the first option we think of when considering real estate in a new city.</p>
+            <p class="andrew">Andrew Barrett-Weiss</p>
+            <p class="director">Director of Workplace Experience</p>
+        </div>
+        <div class="right">
+            <img src="quote-cae0e90a8a.png" alt="quote">
+        </div>
+    </div>
+    <div class="section8">
+        <p>Finding the spaces you need is easy.</p>
+        <div class="middle">
+            <div class="Teams">
+                <img src="modal_image1-73801b6d78.png" alt="modal">
+                <h2>Teams</h2>
+                <p>Instantly deliver hybrid workspace options to your entire organization. Easily manage access to more than 10,000 desks, conference rooms, and private offices around the world.</p>
+                <a href="#"><div class="setup">Setup your team</div></a>
+            </div>
+            <div class="Workspace">
+                <img src="modal_image2-f573be9bde.png" alt="modal">
+                <h2>Instant Workspace</h2>
+                <p>Need a desk for a day, a conference room for a larger group, or a private office for an entire week? Explore the entire Deskpass network and instantly reserve your workspace with a few simple clicks.</p>
+                <a href="#"><div class="setup">Find Your Space</div></a>
+            </div>
+        </div>
+        <p class="contact">Need help? <a href="#">Book a demo with an expert</a> or call <a href="#">(844) 337-5846</a> </p>
+    </div>
+    <footer>
+        <div class="main-footer">
+            <div class="head">
+                <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1077.27 300.35"><path class="word logo-svg" d="M586.09,300.35h-29.6V119.17h29.6v8.42c9.7-7.14,22.21-11.23,36.76-11.23,33.67,0,60.73,28.07,60.73,63.29,0,35-27.06,63-60.73,63-14.55,0-27.06-4.09-36.76-11.24v68.9ZM995.36,199.3c2.55,14.29,13.27,20.41,29.6,20.41,14.29,0,24.25-5.1,24.25-13.27,0-6.38-5.11-11-14.55-12.76l-26.29-4.33C990,186,972.64,176.59,972.64,154.64c0-24.24,20.68-38.79,50.79-38.79,20.67,0,50.53,7.14,53.34,40.07l-27.31.25c-1-12.25-12.24-17.61-26-17.61-14.29,0-21.69,5.87-21.69,13,0,5.87,4.08,11.48,17.1,13.78l22.46,3.57c18.37,3.32,36,11.48,36,35,0,25.78-22.7,39.81-53.07,39.81-27.56,0-53.09-11.48-55.89-44.65l27.05.25Zm-684.07,0c2.56,14.29,13.28,20.41,29.61,20.41,14.29,0,24.24-5.1,24.24-13.27,0-6.38-5.1-11-14.55-12.76l-26.28-4.33c-18.38-3.32-35.73-12.76-35.73-34.71,0-24.24,20.67-38.79,50.79-38.79,20.67,0,50.52,7.14,53.33,40.07l-27.3.25c-1-12.25-12.25-17.61-26-17.61-14.3,0-21.69,5.87-21.69,13,0,5.87,4.08,11.48,17.09,13.78l22.46,3.57c18.38,3.32,36,11.48,36,35,0,25.78-22.71,39.81-53.08,39.81-27.56,0-53.08-11.48-55.89-44.65l27.05.25Zm561.59,0c2.56,14.29,13.27,20.41,29.6,20.41,14.29,0,24.25-5.1,24.25-13.27,0-6.38-5.11-11-14.55-12.76l-26.28-4.33c-18.37-3.32-35.73-12.76-35.73-34.71,0-24.24,20.67-38.79,50.78-38.79,20.67,0,50.53,7.14,53.34,40.07l-27.3.25c-1-12.25-12.25-17.61-26-17.61-14.29,0-21.68,5.87-21.68,13,0,5.87,4.08,11.48,17.09,13.78l22.46,3.57c18.37,3.32,36,11.48,36,35,0,25.78-22.71,39.81-53.08,39.81-27.55,0-53.08-11.48-55.89-44.65l27,.25Zm-695.8-12c2.56,17.1,14.29,30.37,36.25,30.37,11.73,0,20.16-3.82,24.49-11.23h31.39c-6.89,22.21-29.09,37.26-56.65,37.26-38.53,0-64.32-28.32-64.32-64,0-37,25.79-64.31,63.55-64.31,34.2,0,59.46,25,59.72,62.27a51.37,51.37,0,0,1-.77,9.69Zm-50,52.58H97.75v-8.69c-10,7.41-22.47,11.5-37,11.5C27.05,242.69,0,214.61,0,179.39c0-35,27.05-63,60.74-63,14.54,0,27,4.09,37,11.23V58.69h29.34V239.88Zm698.61,0H796.35v-8.43c-10,7.15-22.46,11.24-37,11.24-33.69,0-60.74-28.08-60.74-63,0-35.22,27-63.29,60.74-63.29,14.54,0,27,4.09,37,11.23v-8.42H825.7Zm-379.69,0H416.67V58.69H446V174l53.09-54.86h37.51l-48.49,50,55.38,70.7H505.22l-37.51-49.52L446,212.82v27.06ZM97.75,200.06V158.73c-8.43-12.25-20.17-16.85-32.67-16.85-20.67,0-35.73,17.61-35.73,37.51,0,20.17,15.06,37.77,35.73,37.77C77.58,217.16,89.32,212.57,97.75,200.06Zm698.6,0V159c-8.42-12.5-20.16-17.1-32.66-17.1C743,141.88,728,159.49,728,179.65c0,19.91,15.06,37.51,35.73,37.51C776.19,217.16,787.93,212.57,796.35,200.06ZM654.23,179.65c0-20.16-14.8-37.77-35.73-37.77-12.5,0-24,4.6-32.41,16.85v41.59c8.42,12.25,19.91,16.84,32.41,16.84,20.93,0,35.73-17.6,35.73-37.51ZM177.6,169.18h64.05c-2-17.86-12.76-28.83-29.86-28.83C192.14,140.35,180.91,152.6,177.6,169.18Z" style="fill:#fff;fill-rule:evenodd"></path><rect class="bar" x="97.74" width="348.27" height="29.34" style="fill:#4760FF"></rect></svg>
+                <p>We make hybrid work™</p>
+                <div class="social">
+                    <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.7059 0H1.29412C0.554622 0 0 0.554622 0 1.29412V20.8908C0 21.6303 0.554622 22.1849 1.29412 22.1849H11.8319V13.4958H8.87395V10.1681H11.6471V7.76471C11.6471 4.9916 13.3109 3.32773 15.8992 3.32773C17.1933 3.32773 18.1176 3.32773 18.4874 3.51261V6.47059H16.6387C15.3445 6.47059 14.9748 7.21008 14.9748 8.13445V10.1681H18.4874L18.1176 13.4958H15.1597V22H20.7059C21.4454 22 22 21.4454 22 20.7059V1.29412C22 0.554622 21.4454 0 20.7059 0Z" fill="#FFFFFF" ></path>
+                        <defs><rect fill="#FFFFFF"></rect></defs>
+                    </svg>
+                    <svg preserveAspectRatio="" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.8 4.43077C19.8 4.56923 19.8 4.84615 19.8 4.98462C19.8 11.0769 15.2625 18 6.875 18C4.2625 18 1.925 17.3077 0 15.9231C0.4125 15.9231 0.6875 15.9231 1.1 15.9231C3.1625 15.9231 5.225 15.2308 6.7375 13.9846C4.8125 13.9846 3.1625 12.6 2.475 10.8C2.75 10.8 3.025 10.9385 3.3 10.9385C3.7125 10.9385 4.125 10.9385 4.5375 10.8C2.475 10.3846 0.825 8.58462 0.825 6.36923C1.5125 6.64615 2.2 6.92308 2.8875 6.92308C1.65 6.09231 0.9625 4.70769 0.9625 3.04615C0.9625 2.21538 1.2375 1.38462 1.5125 0.692308C3.7125 3.46154 7.0125 5.26154 10.8625 5.4C10.725 5.26154 10.725 4.84615 10.725 4.56923C10.725 2.07692 12.7875 0 15.2625 0C16.5 0 17.7375 0.553846 18.5625 1.38462C19.525 1.24615 20.625 0.830769 21.45 0.276923C21.175 1.38462 20.35 2.21538 19.525 2.76923C20.35 2.76923 21.175 2.49231 22 2.07692C21.45 3.04615 20.625 3.87692 19.8 4.43077Z" fill="#FFFFFF"></path>
+                    </svg>
+                    <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.9291 14.6194C12.9672 14.6194 14.6194 12.9672 14.6194 10.9291C14.6194 8.89098 12.9672 7.23877 10.9291 7.23877C8.89098 7.23877 7.23877 8.89098 7.23877 10.9291C7.23877 12.9672 8.89098 14.6194 10.9291 14.6194Z" fill="#FFFEFE"></path>
+                        <path d="M22 6.52903C22 5.39355 21.7161 4.54194 21.4323 3.83226C21.1484 3.12258 20.7226 2.55484 20.1548 1.84516C19.5871 1.27742 18.8774 0.851613 18.1677 0.567742C17.4581 0.283871 16.6065 0.141935 15.471 0C14.3355 0 13.9097 0 10.929 0C7.94839 0 7.66452 0 6.52903 0C5.39355 0 4.54194 0.283871 3.83226 0.567742C3.12258 0.851613 2.4129 1.27742 1.84516 1.84516C1.27742 2.4129 0.851613 3.12258 0.567742 3.83226C0.283871 4.54194 0.141935 5.25161 0 6.52903C0 7.66452 0 8.09032 0 11.071C0 14.0516 0 14.4774 0 15.6129C0 16.7484 0.283871 17.6 0.567742 18.3097C0.851613 19.0194 1.27742 19.5871 1.84516 20.2968C2.4129 20.8645 3.12258 21.2903 3.83226 21.5742C4.54194 21.8581 5.39355 22 6.52903 22.1419C7.66452 22.1419 8.09032 22.1419 11.071 22.1419C14.0516 22.1419 14.4774 22.1419 15.6129 22.1419C16.7484 22.1419 17.6 21.8581 18.3097 21.5742C19.0194 21.2903 19.5871 20.8645 20.2968 20.2968C20.8645 19.729 21.2903 19.0194 21.5742 18.3097C21.8581 17.6 22 16.7484 22.1419 15.6129C22.1419 14.4774 22.1419 14.0516 22.1419 11.071C22.1419 8.09032 22 7.66452 22 6.52903ZM10.929 16.6065C7.80645 16.6065 5.25161 14.0516 5.25161 10.929C5.25161 7.80645 7.80645 5.25161 10.929 5.25161C14.0516 5.25161 16.6065 7.80645 16.6065 10.929C16.6065 14.0516 14.0516 16.6065 10.929 16.6065ZM16.8903 6.3871C16.1806 6.3871 15.6129 5.81935 15.6129 5.10968C15.6129 4.4 16.1806 3.83226 16.8903 3.83226C17.6 3.83226 18.1677 4.4 18.1677 5.10968C18.1677 5.81935 17.6 6.3871 16.8903 6.3871Z" fill="#FFFFFF"></path>
+                        <defs>
+                            <rect width="22" height="22" fill="white"></rect>
+                        </defs>
+                    </svg>
+                    <svg viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.8125 8.49658C11.8125 8.36585 11.6812 8.49658 11.8125 8.49658V8.49658Z" fill="#FFFEFE"></path>
+                        <path d="M4.72495 6.53613H0.262451V20.0002H4.72495V6.53613Z" fill="#FFFEFE"></path>
+                        <path d="M2.49375 4.70588C0.91875 4.70588 0 3.66013 0 2.35294C0 1.04575 1.05 0 2.49375 0C4.06875 0 4.9875 1.04575 4.9875 2.35294C5.11875 3.66013 4.06875 4.70588 2.49375 4.70588Z" fill="#FFFEFE"></path>
+                        <path d="M21 19.9999H16.5375V12.8104C16.5375 10.9803 15.8812 9.80383 14.3062 9.80383C13.125 9.80383 12.3375 10.5881 11.9438 11.5032C11.8125 11.6339 11.8125 12.026 11.8125 12.4182V19.9999H7.21875C7.21875 19.9999 7.21875 7.84304 7.21875 6.53585H11.8125V8.49664C12.4688 7.5816 13.5188 6.27441 15.8813 6.27441C18.9 6.27441 21 8.2352 21 12.2875V19.9999Z" fill="#FFFEFE"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="middle">
+                <p>Cities</p>
+                <div>Atlanta</div>
+                <div>D.C.</div>
+                <div>Las Vegas</div>
+                <div>NYC</div>
+                <div>Phoenix</div>
+                <div>St. Louis</div>
+                <div>Austin</div>
+                <div>Dallas</div>
+                <div>London</div>
+                <div>Nashville</div>
+                <div>Portland</div>
+                <div>Sydney</div>
+                <div>Boston</div>
+                <div>Denver</div>
+                <div>Los Angeles</div>
+                <div>New Jersey</div>
+                <div>Raleigh-Durham</div>
+                <div>Tampa</div>
+                <div>Brisbane</div>
+                <div>Detroit</div>
+                <div>Melbourne</div>
+                <div>Orange County</div>
+                <div>Salt Lake City</div>
+                <div>Toronto</div>
+                <div>Calgary</div>
+                <div>Houston</div>
+                <div>Mexico City</div>
+                <div>Orlando</div>
+                <div>San Diego</div>
+                <div>Vancouver</div>
+                <div>Chicago</div>
+                <div>Indianapolis</div>
+                <div>Miami-Ft. Lauderdale</div>
+                <div>Ottawa</div>
+                <div>San Francisco</div>
+                <div>Victoria</div>
+                <div>Columbus</div>
+                <div>Jacksonville</div>
+                <div>Minneapolis</div>
+                <div>Philadelphia</div>
+                <div>Seattle</div>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <p>Deskpass</p>
+                    <div>Pricing</div>
+                    <div>Community</div>
+                    <div>Find a Desk</div>
+                    <div>Support</div>
+                    <div>Find a Conference Room</div>
+                    <div>COVID-19 Safety Pledge</div>
+                    <div>Find an Office</div>
+                </div>
+                <div class="middle-footer">
+                    <p>Company</p>
+                    <div>About Us</div>
+                    <div>Press</div>
+                    <div>Blog</div>
+                    <div>Careers</div>
+                    <div>Rules & Guidelines</div>
+                    <div>Space Partners</div>
+                    <div>Terms & Privacy</div>
+                </div>
+                <div class="right">
+                    <p>From the Blog</p>
+                    <a href="#"><p class="p1">Hybrid Work, Not Hybrid Donkey</p> <p class="p2">Keep Reading</p> </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="chat">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-chat-fill" viewBox="0 0 16 16"> <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/> </svg>
+    </div>
+</body>
+</html>
