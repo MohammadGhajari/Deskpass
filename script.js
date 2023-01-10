@@ -9,10 +9,3 @@ function change_background() {
     back.style.background = 'url("' + backgrounds[index] + '")'
     back.style.backgroundSize = "cover"
 }
-let find_spaces = document.querySelector(".find-spaces")
-let solutions = document.querySelector(".Solutions")
-let resources = document.querySelector(".Resources")
-
-find_spaces.addEventListener("mouseenter", function () {
-    console.log("Asdasd")
-})
