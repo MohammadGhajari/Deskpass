@@ -1,2 +1,2 @@
 # Deskpass
-see output at: https://ghajar-deskpass.netlify.app/
+[see output](https://ghajar-deskpass.netlify.app/)
